@@ -4,8 +4,17 @@ import ddshape.inc as inc
 
 
 def hsphere(index=1, data="", center=(1, (0, 0, 0)), outr=25, shell=3, factor=1):
+    """
+    the main function to write hollow sphere
+    :param index: a number which indicate the line numbers of main shape data
+    :param data: string with all shape data combined
+    :param center: center of the hollow sphere
+    :param outr: out radius of sphere
+    :param shell: shell thickness of sphere
+    :param factor: which determine the precision of shape data
+    :return: int, string
+    """
     center_num = center[0]
-
     # main data body create
     for i in range(center_num):
         center_tmp = center[i + 1] * factor
@@ -22,6 +31,13 @@ def hsphere(index=1, data="", center=(1, (0, 0, 0)), outr=25, shell=3, factor=1)
 
 
 def writeshape(out_radius, index, data):
+    """
+    write data into shape.dat
+    :param out_radius: out radius of A sphere
+    :param index: a number which indicate the line numbers of main shape data
+    :param data: string with all shape data combined
+    :return: null
+    """
     inc.write_shape((out_radius * 2, out_radius * 2, out_radius * 2), index, data)
 
 

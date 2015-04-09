@@ -1,6 +1,5 @@
 # -*- encoding:utf-8 -*-
 
 from ddshape import *
+import ddshape
 
-index, data = triplate.triplate()
-triplate.writeshape((100, 100, 100), index, data)
