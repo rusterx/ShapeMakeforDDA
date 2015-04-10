@@ -15,6 +15,7 @@ setup(
     author_email='1281961491@qq.com',
     url='https://github.com/xingtingyang/ddshape',
     license='BSD style',
+    description='his is a package which include some modules that you can use them to create shape.dat used by ddscat',
     long_description=open('README.md').read()
 
 )
