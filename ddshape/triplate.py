@@ -24,19 +24,10 @@ def triplate(index=1, data="", center=(0, 0, 0), l=100):
     return index, data
 
 
-def writeshape(out_radius=(50, 50, 50), index=1, data=""):
-    """
-    write data into shape.dat
-    :param out_radius: out radius of A sphere
-    :param index: a number which indicate the line numbers of main shape data
-    :param data: string with all shape data combined
-    :return: null
-    """
-    inc.write_shape((out_radius[0], out_radius[1], out_radius[2]), index, data)
 
 
 # examples of the usage of this module
 # ----
 # from ddshape import *
 # index, data = triplate.triplate()
-# triplate.writeshape((100, 100, 100), index, data)
+# inc.writeshape((100, 100, 100), index, data)

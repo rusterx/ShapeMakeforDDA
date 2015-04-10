@@ -44,21 +44,11 @@ def verify(relative_point=(0, 0, 0), center=(0, 0, 0), offset_center=(0, 0, 0), 
     return True
 
 
-def writeshape(out_radius=(50, 50, 50), index=1, data=""):
-    """
-    write data into shape.dat
-    :param out_radius: out radius of A sphere
-    :param index: a number which indicate the line numbers of main shape data
-    :param data: string with all shape data combined
-    :return: null
-    """
-    inc.write_shape((out_radius[0], out_radius[1], out_radius[2]), index, data)
-
 
 
 # examples of the usage of this module
 # ----
 # from ddshape import *
 # index_1, data_1 = bsphere.bsphere(center=(-25, 0, 0), offset=(18, 0, 0))
-# index_2, data_2 = bsphere.bsphere(index=index_1, center=(25, 0, 0), offset=(-18, 0, 0))
-# bsphere.writeshape(25, index_2, data_1 + data_2)
+# index_2, data_2 = bsphere.bsphere(index=index1, center=(25, 0, 0), offset=(-18, 0, 0))
+# inc.writeshape(25, index_2, data_1 + data_2)

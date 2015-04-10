@@ -30,20 +30,10 @@ def hsphere(index=1, data="", center=(1, (0, 0, 0)), outr=25, shell=3, factor=1)
     return index, data
 
 
-def writeshape(out_radius=(50, 50, 50), index=1, data=""):
-    """
-    write data into shape.dat
-    :param out_radius: out radius of A sphere
-    :param index: a number which indicate the line numbers of main shape data
-    :param data: string with all shape data combined
-    :return: null
-    """
-    inc.write_shape((out_radius[0], out_radius[1], out_radius[2]), index, data)
-
 
 # examples of the usage of this module
 # ----
 # from ddshape import *
 # index, data = hsphere.hsphere(center=(2, (-30, 0, 0), (30, 0, 0)), shell=3)
-# hsphere.writeshape((100, 100, 100), index, data)
+# inc.writeshape((100, 100, 100), index, data)
 
