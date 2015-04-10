@@ -44,7 +44,7 @@ def verify(relative_point=(0, 0, 0), center=(0, 0, 0), offset_center=(0, 0, 0), 
     return True
 
 
-def writeshape(out_radius, index, data):
+def writeshape(out_radius=(50, 50, 50), index=1, data=""):
     """
     write data into shape.dat
     :param out_radius: out radius of A sphere
@@ -52,7 +52,7 @@ def writeshape(out_radius, index, data):
     :param data: string with all shape data combined
     :return: null
     """
-    inc.write_shape((out_radius * 2, out_radius * 2, out_radius * 2), index, data)
+    inc.write_shape((out_radius[0], out_radius[1], out_radius[2]), index, data)
 
 
 

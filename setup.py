@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='ddshape',
-    version='0.1',
+    version='0.11',
     packages=find_packages(),
 
     package_data={
@@ -15,6 +15,6 @@ setup(
     author_email='1281961491@qq.com',
     url='https://github.com/xingtingyang/ddshape',
     license='BSD style',
-    description='This is a package that can be used to create shape.dat needed by ddscat.'
+    long_description=open('README.md').read()
 
 )
