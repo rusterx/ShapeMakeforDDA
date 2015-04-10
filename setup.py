@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='ddshape',
-    version='0.13',
+    version='0.14',
     packages=find_packages(),
 
     package_data={
